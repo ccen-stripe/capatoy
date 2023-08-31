@@ -74,12 +74,23 @@ window.customElements.define(
           on using native features, building plugins, and more.
         </p>
         <a href="https://capacitorjs.com" target="_blank" class="button">Read more</a>
-        <h2>Tiny Demo</h2>
+        <h2>Tiny Dedmo2</h2>
         <p>
           This demo shows how to call Capacitor plugins. Say cheese!
         </p>
         <p>
           <button class="button" id="take-photo">Take Photo</button>
+        </p>
+        <p>
+          <img id="image" style="max-width: 100%">
+        </p>
+
+        <h2>Identity Demo</h2>
+        <p>
+          This demo shows how to call react native code.
+        </p>
+        <p>
+          <button class="button" id="start-identity">start identity</button>
         </p>
         <p>
           <img id="image" style="max-width: 100%">
@@ -104,6 +115,16 @@ window.customElements.define(
           }
 
           image.src = photo.webPath;
+        } catch (e) {
+          console.warn('User cancelled', e);
+        }
+      });
+
+
+
+      self.shadowRoot.querySelector('#start-identity').addEventListener('click', async function (e) {
+        try {
+          print("start identity");
         } catch (e) {
           console.warn('User cancelled', e);
         }
