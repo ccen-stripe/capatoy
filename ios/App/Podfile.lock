@@ -3,21 +3,43 @@ PODS:
     - CapacitorCordova
   - CapacitorCamera (5.0.7):
     - Capacitor
+  - CapacitorCommunityStripeIdentity (5.2.0):
+    - Capacitor
+    - StripeIdentity (= 23.4.0)
   - CapacitorCordova (5.2.3)
   - CapacitorSplashScreen (5.0.6):
     - Capacitor
+  - StripeCameraCore (23.4.0):
+    - StripeCore (= 23.4.0)
+  - StripeCore (23.4.0)
+  - StripeIdentity (23.4.0):
+    - StripeCameraCore (= 23.4.0)
+    - StripeCore (= 23.4.0)
+    - StripeUICore (= 23.4.0)
+  - StripeUICore (23.4.0):
+    - StripeCore (= 23.4.0)
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
+  - "CapacitorCommunityStripeIdentity (from `../../node_modules/@capacitor-community/stripe-identity`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
   - "CapacitorSplashScreen (from `../../node_modules/@capacitor/splash-screen`)"
+
+SPEC REPOS:
+  trunk:
+    - StripeCameraCore
+    - StripeCore
+    - StripeIdentity
+    - StripeUICore
 
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorCamera:
     :path: "../../node_modules/@capacitor/camera"
+  CapacitorCommunityStripeIdentity:
+    :path: "../../node_modules/@capacitor-community/stripe-identity"
   CapacitorCordova:
     :path: "../../node_modules/@capacitor/ios"
   CapacitorSplashScreen:
@@ -26,9 +48,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Capacitor: 6f44cbc33839b8a4202b8eac97041fe584083417
   CapacitorCamera: 084b0b228bba7d00587910337b1c89e93b1d32ab
+  CapacitorCommunityStripeIdentity: e77b5fdaaa6c95a2fd56901abfb44eef6932675c
   CapacitorCordova: 35def3ebfdef491f0a7b652816eb873ff4b20bbf
   CapacitorSplashScreen: 5fa2ab5e46cf5cc530cf16a51c80c7a986579ccd
+  StripeCameraCore: a438bafc9bda40edb956f935d481717103fa7feb
+  StripeCore: f872db348b65c2ab4abd24b330fcd8dc2a279f27
+  StripeIdentity: 118e1e4bf9ff23e693c0a2c418dabc6bbf4fb735
+  StripeUICore: 2d07f596393a9f35d60b2bc54942a495546417a5
 
-PODFILE CHECKSUM: c23ed3fd935a944047d8284cab144b362bbd00cb
+PODFILE CHECKSUM: f22f0c1eb313c0066da123e5beee50a1b58cc614
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.14.3

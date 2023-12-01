@@ -1,5 +1,6 @@
 import { SplashScreen } from '@capacitor/splash-screen';
 import { Camera } from '@capacitor/camera';
+import { StripeIdentity } from '@capacitor-community/stripe-identity';
 
 window.customElements.define(
   'capacitor-welcome',
@@ -124,7 +125,13 @@ window.customElements.define(
 
       self.shadowRoot.querySelector('#start-identity').addEventListener('click', async function (e) {
         try {
-          print("start identity");
+          // MLGB - do something here
+          // await StripeIdentity.create({
+          //   verificationId: 'vs_1NlLDcGMZYGNxJkBUX7oL4q6',
+          //   ephemeralKeySecret: 'ek_live_YWNjdF8xSDM0ZFhHTVpZR054SmtCLDR1VDdJS2pjZkRkNktyVkVrZnhUeUFBV1BYckl6SVY_00oYrHzjMR',
+          // });
+          // const result = await StripeIdentity.present();
+          
         } catch (e) {
           console.warn('User cancelled', e);
         }
