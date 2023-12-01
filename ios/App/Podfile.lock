@@ -1,6 +1,8 @@
 PODS:
   - Capacitor (5.2.3):
     - CapacitorCordova
+  - CapacitorBrowser (5.1.0):
+    - Capacitor
   - CapacitorCamera (5.0.7):
     - Capacitor
   - CapacitorCommunityStripeIdentity (5.2.0):
@@ -21,6 +23,7 @@ PODS:
 
 DEPENDENCIES:
   - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorBrowser (from `../../node_modules/@capacitor/browser`)"
   - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
   - "CapacitorCommunityStripeIdentity (from `../../node_modules/@capacitor-community/stripe-identity`)"
   - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
@@ -36,6 +39,8 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Capacitor:
     :path: "../../node_modules/@capacitor/ios"
+  CapacitorBrowser:
+    :path: "../../node_modules/@capacitor/browser"
   CapacitorCamera:
     :path: "../../node_modules/@capacitor/camera"
   CapacitorCommunityStripeIdentity:
@@ -47,6 +52,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Capacitor: 6f44cbc33839b8a4202b8eac97041fe584083417
+  CapacitorBrowser: 7a0fb6a1011abfaaf2dfedfd8248f942a8eda3d6
   CapacitorCamera: 084b0b228bba7d00587910337b1c89e93b1d32ab
   CapacitorCommunityStripeIdentity: e77b5fdaaa6c95a2fd56901abfb44eef6932675c
   CapacitorCordova: 35def3ebfdef491f0a7b652816eb873ff4b20bbf
@@ -56,6 +62,6 @@ SPEC CHECKSUMS:
   StripeIdentity: 118e1e4bf9ff23e693c0a2c418dabc6bbf4fb735
   StripeUICore: 2d07f596393a9f35d60b2bc54942a495546417a5
 
-PODFILE CHECKSUM: f22f0c1eb313c0066da123e5beee50a1b58cc614
+PODFILE CHECKSUM: e0ba1ad014f91f9d327d47a0398dfb234a902c51
 
 COCOAPODS: 1.14.3

@@ -1,6 +1,7 @@
 import { SplashScreen } from '@capacitor/splash-screen';
 import { Camera } from '@capacitor/camera';
 import { StripeIdentity } from '@capacitor-community/stripe-identity';
+import { Browser } from '@capacitor/browser';
 
 window.customElements.define(
   'capacitor-welcome',
@@ -125,13 +126,15 @@ window.customElements.define(
 
       self.shadowRoot.querySelector('#start-identity').addEventListener('click', async function (e) {
         try {
-          // MLGB - do something here
+          // do something here
           // await StripeIdentity.create({
           //   verificationId: 'vs_1NlLDcGMZYGNxJkBUX7oL4q6',
           //   ephemeralKeySecret: 'ek_live_YWNjdF8xSDM0ZFhHTVpZR054SmtCLDR1VDdJS2pjZkRkNktyVkVrZnhUeUFBV1BYckl6SVY_00oYrHzjMR',
           // });
           // const result = await StripeIdentity.present();
-          
+          // async () => {
+            await Browser.open({ url: 'https://verify.stripe.com/start/live_YWNjdF8xTEliaExFR2tQaGFiSlRqLF9QNnRKWkNmZFk2UHZFZVl5ZWFIZGYzOTQ5d2tlR0ZY0100LDwe0MD6' });
+          // };
         } catch (e) {
           console.warn('User cancelled', e);
         }
