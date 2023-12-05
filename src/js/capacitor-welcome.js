@@ -126,15 +126,12 @@ window.customElements.define(
 
       self.shadowRoot.querySelector('#start-identity').addEventListener('click', async function (e) {
         try {
-          // do something here
-          // await StripeIdentity.create({
-          //   verificationId: 'vs_1NlLDcGMZYGNxJkBUX7oL4q6',
-          //   ephemeralKeySecret: 'ek_live_YWNjdF8xSDM0ZFhHTVpZR054SmtCLDR1VDdJS2pjZkRkNktyVkVrZnhUeUFBV1BYckl6SVY_00oYrHzjMR',
-          // });
-          // const result = await StripeIdentity.present();
-          // async () => {
-            await Browser.open({ url: 'https://verify.stripe.com/start/live_YWNjdF8xTEliaExFR2tQaGFiSlRqLF9QNnRKWkNmZFk2UHZFZVl5ZWFIZGYzOTQ5d2tlR0ZY0100LDwe0MD6' });
-          // };
+          // pass verificationId and ephemeralKeySecret from your backend
+          await StripeIdentity.create({
+              verificationId: 'vs_1NlLDcGMZYGNxJkBUX7oL4q6',
+              ephemeralKeySecret: 'ek_live_YWNjdF8xSDM0ZFhHTVpZR054SmtCLDR1VDdJS2pjZkRkNktyVkVrZnhUeUFBV1BYckl6SVY_00oYrHzjMR',
+          });
+          const result = await StripeIdentity.present();
         } catch (e) {
           console.warn('User cancelled', e);
         }
